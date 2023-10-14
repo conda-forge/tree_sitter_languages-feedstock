@@ -1,5 +1,5 @@
 {% set name = "tree_sitter_languages" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/grantjenks/py-tree-sitter-languages/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 1801390e30edf5ce762388ced7c376feb7e4c8262e89be100dc8cefebf604073
+  sha256: a10c786fb25e435f616b93b1536c7b52b5740428f78f25b87223b01575b8f8e9
 
 build:
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
