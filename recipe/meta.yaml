@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [py<36]
-  script: {{ PYTHON }} -m pip install . -vv && {{ PYTHON }} build.py
+  script: {{ PYTHON }} build.py && {{ PYTHON }} -m pip install . -vv
   number: 1
 
 requirements:
@@ -24,6 +24,7 @@ requirements:
     - cython
     - pip
     - python
+    - tree_sitter
   run:
     - python
     - tree_sitter
