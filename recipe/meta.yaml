@@ -13,8 +13,7 @@ build:
   skip: true  # [py<36]
   script: |
     set -euxo pipefail                   # [unix]
-    ln -s "${CC}" cc                     # [unix]
-    ls -la "${CC}"                       # [unix]
+    ln -s "${CC}" "$(dirname ${CC})/cc"  # [unix]
     "${CC}" --version                    # [unix]
     cc --version                         # [unix]
     {{ PYTHON }} build.py
