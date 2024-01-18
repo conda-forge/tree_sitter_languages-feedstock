@@ -11,7 +11,9 @@ source:
 
 build:
   skip: true  # [py<36]
-  script: {{ PYTHON }} build.py && {{ PYTHON }} -m pip install . -vv
+  script: |
+    alias cc="${CC}"  # [unix]
+    {{ PYTHON }} build.py && {{ PYTHON }} -m pip install . -vv
   number: 1
 
 requirements:
