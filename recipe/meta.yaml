@@ -11,8 +11,8 @@ source:
 
 build:
   skip: true  # [py<36]
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv && {{ PYTHON }} build.py
+  number: 1
 
 requirements:
   build:
