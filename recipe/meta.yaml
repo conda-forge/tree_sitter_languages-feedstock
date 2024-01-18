@@ -12,8 +12,11 @@ source:
 build:
   skip: true  # [py<36]
   script: |
-    alias cc="${CC}"  # [unix]
-    {{ PYTHON }} build.py && {{ PYTHON }} -m pip install . -vv
+    set -euxo pipefail                                           # [unix]
+    alias cc="${CC}"                                             # [unix]
+    cc --version                                                 # [unix]
+    {{ PYTHON }} build.py
+    {{ PYTHON }} -m pip install . -vv
   number: 1
 
 requirements:
