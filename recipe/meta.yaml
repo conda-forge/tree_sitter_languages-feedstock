@@ -13,8 +13,9 @@ build:
   skip: true  # [py<36]
   script: |
     set -euxo pipefail                   # [unix]
-    alias cc="${CC}"                     # [unix]
+    ls -s "${CC}" cc                     # [unix]
     ls -la "${CC}"                       # [unix]
+    ls -la .                             # [unix]
     which cc                             # [unix]
     cc --version                         # [unix]
     {{ PYTHON }} build.py
