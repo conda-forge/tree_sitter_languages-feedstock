@@ -13,7 +13,7 @@ build:
   skip: true  # [py<36]
   script: |
     set -euxo pipefail                   # [unix]
-    ls -s "${CC}" cc                     # [unix]
+    ln -s "${CC}" cc                     # [unix]
     ls -la "${CC}"                       # [unix]
     ls -la .                             # [unix]
     which cc                             # [unix]
