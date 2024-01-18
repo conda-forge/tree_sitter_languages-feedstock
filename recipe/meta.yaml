@@ -15,8 +15,7 @@ build:
     set -euxo pipefail                   # [unix]
     ln -s "${CC}" cc                     # [unix]
     ls -la "${CC}"                       # [unix]
-    ls -la .                             # [unix]
-    which cc                             # [unix]
+    "${CC}" --version                    # [unix]
     cc --version                         # [unix]
     {{ PYTHON }} build.py
     {{ PYTHON }} -m pip install . -vv
