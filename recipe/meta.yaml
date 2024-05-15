@@ -12,7 +12,7 @@ source:
 build:
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -45,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - thewchan
+    - davidbrochart
