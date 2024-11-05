@@ -42,7 +42,6 @@ export CONDA_LIBMAMBA_SOLVER_NO_CHANNELS_FROM_INSTALLED=1
 
 
 
-
 echo -e "\n\nSetting up the condarc and mangling the compiler."
 setup_conda_rc ./ ./recipe ./.ci_support/${CONFIG}.yaml
 
