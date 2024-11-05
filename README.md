@@ -268,5 +268,6 @@ Feedstock Maintainers
 =====================
 
 * [@davidbrochart](https://github.com/davidbrochart/)
+* [@moritzwilksch](https://github.com/moritzwilksch/)
 * [@thewchan](https://github.com/thewchan/)
 
