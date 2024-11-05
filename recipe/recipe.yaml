@@ -23,7 +23,7 @@ requirements:
     - if: build_platform != target_platform
       then: cython
     - ${{ compiler('c') }}
-    - tree_sitter
+    - tree_sitter <0.22
     - git
   host:
     - cython
